@@ -1,0 +1,14 @@
+---
+layout: default
+title: Home
+---
+<h1>WORK IN PROGESS</h1>
+<h1>TRAVAIL EN COUR</h1>
+<h2>VOIR AVEC MATTEO (dans la vraie vie) POUR PLUS D'INFORMATIONS</h2>
+<h2>Projets</h2>
+<div>
+    {% for project in site.projects %}
+      <h3><a href=".{{ project.url }}">{{ project.title }}</a></h3>
+      {{ project.excerpt }}
+    {% endfor %}
+</div>

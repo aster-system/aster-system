@@ -1,3 +1,7 @@
 theme: jekyll-theme-minimal
 title: Aster System
 description: The official Aster System company website
+
+collections:
+  projects:
+    output: true
