@@ -1,4 +1,4 @@
-# aster-systeme
+# Aster-system
 Official website of the Aster System company.
 
 ## Informations
