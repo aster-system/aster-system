@@ -1,5 +1,7 @@
 ---
 layout: default
+location: "."
+main_title: Aster System
 title: Home
 ---
 <h1>WORK IN PROGESS</h1>
@@ -9,6 +11,6 @@ title: Home
 <div>
     {% for project in site.projects %}
       <h3><a href=".{{ project.url }}">{{ project.title }}</a></h3>
-      {{ project.excerpt }}
+      {{ project.description }}
     {% endfor %}
 </div>

@@ -1,6 +1,6 @@
-<nav>
+<nav id="global_nav">
     {% for item in site.data.project_navigation %}
-    <a href="{{ item.link }}">
+    <a href="{{ page.location }}{{ item.link }}">
       {{ item.name }}
     </a>
     {% endfor %}

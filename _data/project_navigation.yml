@@ -1,2 +1,6 @@
 - name: Home page
-  link: ../index.html
+  link: /index.html
+- name: SCLS
+  link: /projects/scls.html
+- name: PLEOS
+  link: /projects/pleos.html
