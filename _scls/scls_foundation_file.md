@@ -15,10 +15,12 @@ scls_foundation_version: "0.1"
     Get datas about files
 </h2>
 <section>
-    SCLS Foundamental File adds some functions made to describe a file / directory.
-    In fact, this functions are just some simplification of the filesystem functions, which are usefull in some cases.
-    You can analyse easily a directory. The function "directory_content" allows a simple access to the sub-files of a directory.
-    You can also have some basics informations about a file with "file_extension" which gives the extension and "file_name" which gives the name of the file.
+    <article>
+        SCLS Foundamental File adds some functions made to describe a file / directory.
+        In fact, this functions are just some simplification of the filesystem functions, which are usefull in some cases.
+        You can analyse easily a directory. The function "directory_content" allows a simple access to the sub-files of a directory.
+        You can also have some basics informations about a file with "file_extension" which gives the extension and "file_name" which gives the name of the file.
+    </article>
     <h3>
         Functions
     </h3>
@@ -48,7 +50,9 @@ scls_foundation_version: "0.1"
     Read and write in files
 </h2>
 <section>
-    SCLS Foundamental File allows the user to read or write in a file, very very easily. It allows to do that in only one line of code.
+    <article>
+        SCLS Foundamental File allows the user to read or write in a file, very very easily. It allows to do that in only one line of code.
+    </article>
     <h3>
         Functions
     </h3>
@@ -58,13 +62,15 @@ scls_foundation_version: "0.1"
         </h4>
         <div>
             Reads the entire file "path", and returns it.
-            If any kinds of error occurs, "" is returned.
+            If any kinds of error occurs, "" is returned.<br>
+            This function was added in the version 0.1 and last edited in the version 0.1.
         </div>
         <h4>
             void write_in_file(std::string path, std::string to_write, std::ios::openmode opening_mode = std::ios::out)
         </h4>
         <div>
-            Erases or creates "path", then writes "to_write" in it. You can handle the mode of opening with "opening_mode".
+            Erases or creates "path", then writes "to_write" in it. You can handle the mode of opening with "opening_mode".<br>
+            This function was added in the version 0.1 and last edited in the version 0.1.
         </div>
     </article>
 </section>

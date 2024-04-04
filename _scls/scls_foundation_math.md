@@ -12,8 +12,10 @@ scls_foundation_version: "0.1"
     Mathematical functions
 </h2>
 <section>
-    SCLS Foundamental Math contains some (C++) functions made to execute (mathematicals) functions.</br>
-    It has functions used in the image handling, like the "paeth_function".
+    <article>
+        SCLS Foundamental Math contains some (C++) functions made to execute (mathematicals) functions.</br>
+        It has functions used in the image handling, like the "paeth_function".
+    </article>
     <h3>
         Functions
     </h3>
@@ -23,7 +25,8 @@ scls_foundation_version: "0.1"
         </h4>
         <div>
             Apply the paeth function to the "left", "above" and "upper_left" value.
-            See the <a href="http://www.libpng.org/pub/png/spec/1.2/PNG-Filters.html" target="_blank">W3 Consortium</a> PNG website to have more informations about it.
+            See the <a href="http://www.libpng.org/pub/png/spec/1.2/PNG-Filters.html" target="_blank">W3 Consortium</a> PNG website to have more informations about it.<br>
+            This function was added in the version 0.1 and last edited in the version 0.1.
         </div>
     </article>
 </section>
@@ -31,10 +34,12 @@ scls_foundation_version: "0.1"
     Get mathematicals datas
 </h2>
 <section>
-    If you want to get datas about something mathematicly, without any functions, SCLS Foundamental Math allows it.
-    This functions are not hard to code at all, but it's a gain of time to have them already coded in SCLS.
-    You can normalize a value between two other values with "normalize_value".
-    You can get the sign of a double with the "sign" function.
+    <article>
+        If you want to get datas about something mathematicly, without any functions, SCLS Foundamental Math allows it.
+        This functions are not hard to code at all, but it's a gain of time to have them already coded in SCLS.
+        You can normalize a value between two other values with "normalize_value".
+        You can get the sign of a double with the "sign" function.
+    </article>
     <h3>
         Functions
     </h3>
@@ -45,13 +50,15 @@ scls_foundation_version: "0.1"
         <div>
             Return the double "number" normalized between "min" and "max" both included.
             This function is very similar to the "mod" function.
-            if max is tinier than min, the 2 values are swapped. If max - min = 0, 0 is returned.
+            if max is tinier than min, the 2 values are swapped. If max - min = 0, 0 is returned.<br>
+            This function was added in the version 0.1 and last edited in the version 0.1.
         </div>
         <h4>
             int sign(double number)
         </h4>
         <div>
-            Return the sign of "number", -1 or 1.
+            Return the sign of "number", -1 or 1.<br>
+            This function was added in the version 0.1 and last edited in the version 0.1.
         </div>
     </article>
 </section>

@@ -26,17 +26,10 @@ scls_foundation_version: "0.1"
         </div>
     </article>
     <article>
-        <h3 id="how_to_use">How to use SCLS Foundation ?</h3>
-        <div>
-            Here a little tutorial of how to use the SCLS Foundation library : <a href = "how_to_use.html">How to use SCLS Foundation ?</a>.
-            SCLS Foundation uses the LGPL V3.0 license. See : <a href = "https://www.gnu.org/licenses/lgpl-3.0.html" target = "_blank">GNU website</a>.
-        </div>
-    </article>
-    <article>
         <h3>Others ressources</h3>
         <div>
             Here some others ressources about SCLS Foundation "Leonhard" :
-            -The Github project : <a href="https://github.com/aster-system/scls-foundation-leonhard" target="_blank">SCLS Foundation "Leonhard"</a>.
+            <li>The Github project : <a href="https://github.com/aster-system/scls-foundation-leonhard" target="_blank">SCLS Foundation "Leonhard"</a>.</li>
         </div>
     </article>
 </section>
@@ -51,8 +44,8 @@ scls_foundation_version: "0.1"
         <h3>Documentation</h3>
         The current documented version is the {{page.scls_foundation_version}} version.
         Each SCLS Foundation functions / classes / ... uses the "scls" namespace, to be separate from the rest of your program and easily usable.
-        SCLS Foundation is cutted in differents files, each ones having a specific usage.
-        Here a list of each files :
+        SCLS Foundation is cutted in differents files, each ones having a specific usage.<br>
+        Here a list of each files (version 0.1) :
         <ul>
             <li>scls_foundation.h : A file including every others files in the library.</li>
             <li><a href="scls_foundation_core.html">scls_foundation_core.h</a> : The core files and features of SCLS Foundation.</li>
