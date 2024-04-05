@@ -35,8 +35,7 @@ scls_foundation_version: "0.1"
     <h2>Content</h2>
     <article>
         <h3>Download</h3>
-        The library is not yet avaible.
-        The 0.1 version will be the 8 april 2024.<br><br>
+        The library is avaible on Google Drive, <a href="https://drive.google.com/file/d/1KlH3lTfOtCwBjW3Z8HW1ZxGFlxNrz3ZB/view?usp=drive_link">here</a>.<br><br>
         It is made to be EXTREMELY easy to use. When you download the .zip, you can extract datas from it.
         You will find a file "scls_foundation.h" and a directory "scls_foundation_directory".
         You just have to put this two files in the same directory and include "scls_foundation.h" with :<br><br>
