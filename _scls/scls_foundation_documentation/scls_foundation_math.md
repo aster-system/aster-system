@@ -1,6 +1,6 @@
 ---
 layout: project
-location: ".."
+location: "../.."
 main_title: SCLS Foundation Math
 scls_foundation_version: "0.1"
 ---

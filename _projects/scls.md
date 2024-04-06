@@ -35,12 +35,14 @@ scls_foundation_version: "0.1"
 </section>
 <section>
     <h2>Content</h2>
+    {% for item in site.data.scls_parts %}
     <article>
-        <h3>SCLS Foundation "Leonhard"</h3>
+        <h3>{{item.name}}</h3>
         <div>
-            The foundation of SCLS project is in this collection of files.
-            The current version of SCLS Foundation is {{page.scls_foundation_version}}.<br><br>
-            To have more informations, see the <a href="../scls/foundation.html">SCLS Foundation "Leonhard"</a> page.
+            {{item.description}}<br>
+            The current version of SCLS Foundation is {{item.version}}.<br><br>
+            To have more informations, see the <a href="{{item.link}}">{{item.name}}</a> page.
         </div>
     </article>
+    {% endfor %}
 </section>

@@ -1,28 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <meta charset="utf-8">
-    <title>Scls_foundation_file</title>
-  </head>
-  <body>
-    <h1 id="main_title">SCLS Foundation File</h1>
-    <nav id="global_nav">
-    
-    <a href="../index.html">
-      Home page
-    </a>
-    
-    <a href="../projects/scls.html">
-      SCLS
-    </a>
-    
-    <a href="../projects/pleos.html">
-      PLEOS
-    </a>
-    
-</nav>
-    <h2>Presentation</h2>
+---
+layout: project
+location: "../.."
+main_title: SCLS Foundation File
+scls_foundation_version: "0.1"
+---
+<h2>Presentation</h2>
 <section>
     SCLS Foundamental File contains some basics but usefull functions to do some simple file editing with C++.
     It's not the most filled SCLS Foundamental.
@@ -80,14 +62,14 @@
         </h4>
         <div>
             Reads the entire file "path", and returns it.
-            If any kinds of error occurs, "" is returned.<br />
+            If any kinds of error occurs, "" is returned.<br>
             This function was added in the version 0.1 and last edited in the version 0.1.
         </div>
         <h4>
             void write_in_file(std::string path, std::string to_write, std::ios::openmode opening_mode = std::ios::out)
         </h4>
         <div>
-            Erases or creates "path", then writes "to_write" in it. You can handle the mode of opening with "opening_mode".<br />
+            Erases or creates "path", then writes "to_write" in it. You can handle the mode of opening with "opening_mode".<br>
             This function was added in the version 0.1 and last edited in the version 0.1.
         </div>
     </article>
@@ -98,6 +80,3 @@
 <section>
     This file define the macro "SCLS_FOUNDATION_FILE".
 </section>
-
-  </body>
-</html>

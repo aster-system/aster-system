@@ -1,0 +1,30 @@
+---
+layout: project
+location: ".."
+main_title: SCLS Documentalist "Agatha"
+---
+<section>
+    <h2>Presentation</h2>
+    <article>
+        <h3>What is SCLS Documentalist "Agatha" ?</h3>
+        <div>
+            SCLS Documentalist "Agatha" is a special part of the SCLS library. Indeed, it is not made more as a software than a real library.
+            However, it is made to simplify the documentation, and it is Open Source. It has so its place here.
+        </div>
+    </article>
+    <article>
+        <h3>Others ressources</h3>
+        <div>
+            Here some others ressources about SCLS Documentalist "Agatha" :
+            <li>The Github project : <a href="https://github.com/aster-system/scls-documentalist-agatha" target="_blank">SCLS Documentalist "Agatha"</a>.</li>
+        </div>
+    </article>
+</section>
+<section>
+    <h2>Content</h2>
+    <article>
+        <h3>License</h3>
+        SCLS Documentalist "Agatha" uses the GPL V3.0 licence, more informations in <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">this website</a>.<br>
+        You can change and upgrade it if you want. If you publish it, we would be strongly grateful if you could mention us, or contact us to make your upgrade an official upgrade.
+    </article>
+</section>

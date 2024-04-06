@@ -1,0 +1,8 @@
+- name: SCLS Foundation "Leonhard"
+  description: "The foundation of SCLS project is in this collection of files."
+  link: ../scls/foundation.html
+  version: "0.1"
+- name: SCLS Documentalist "Agatha"
+  description: "A very usefull helper to do documentation, created and used for SCLS."
+  link: ../scls/documentalist.html
+  version: "0.0"

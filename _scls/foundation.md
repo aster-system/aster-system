@@ -2,7 +2,6 @@
 layout: project
 location: ".."
 main_title: SCLS Foundation "Leonhard"
-scls_foundation_version: "0.1"
 ---
 <section>
     <h2>Presentation</h2>
@@ -55,10 +54,10 @@ scls_foundation_version: "0.1"
         Here a list of each files (version 0.1) :
         <ul>
             <li>scls_foundation.h : A file including every others files in the library.</li>
-            <li><a href="scls_foundation_core.html">scls_foundation_core.h</a> : The core files and features of SCLS Foundation "Leonhard".</li>
-            <li><a href="scls_foundation_binary.html">scls_foundation_binary.h</a> : A simple and secure way to use binary with SCLS Foundation "Leonhard".</li>
-            <li><a href="scls_foundation_file.html">scls_foundation_file.html</a> : A simple one-line way to handle easily files with SCLS Foundation "Leonhard".</li>
-            <li><a href="scls_foundation_math.html">scls_foundation_math.html</a> : A sets of little simple mathematicals functions.</li>
+            <li><a href="scls_foundation_documentation/scls_foundation_core.html">scls_foundation_core.h</a> : The core files and features of SCLS Foundation "Leonhard".</li>
+            <li><a href="scls_foundation_documentation/scls_foundation_binary.html">scls_foundation_binary.h</a> : A simple and secure way to use binary with SCLS Foundation "Leonhard".</li>
+            <li><a href="scls_foundation_documentation/scls_foundation_file.html">scls_foundation_file.html</a> : A simple one-line way to handle easily files with SCLS Foundation "Leonhard".</li>
+            <li><a href="scls_foundation_documentation/scls_foundation_math.html">scls_foundation_math.html</a> : A sets of little simple mathematicals functions.</li>
         </ul>
     </article>
     <article>
