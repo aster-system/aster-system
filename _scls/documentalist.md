@@ -13,6 +13,17 @@ main_title: SCLS Documentalist "Agatha"
         </div>
     </article>
     <article>
+        <h3>The importance of SCLS Format "Mary"</h3>
+        <div>
+            SCLS Documentalist "Agatha" is made to take a dirty text, which can be code, explanation... and change it to a well documented text.
+            To do that, it use a system of pattern of text. The user only have to enter the datas about something, and the library write correctly the text.<br><br>
+            When we got this idea, we knewn that we would have to adapt the library to be compatible with the C++ code.
+            However, convert a complex and dirty C++ code to something like that is complicated.
+            So, we thought about a specific code format, easily readable by the library and by a human developer.<br>
+            This format is called <a href="format.html">SCLS Format "Mary"</a>.
+        </div>
+    </article>
+    <article>
         <h3>Others ressources</h3>
         <div>
             Here some others ressources about SCLS Documentalist "Agatha" :
