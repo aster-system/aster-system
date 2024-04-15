@@ -5,7 +5,7 @@
 - name: SCLS Documentalist "Agatha"
   description: "A very usefull helper to do documentation, created and used for SCLS."
   link: ../scls/documentalist.html
-  version: "0.0"
+  version: "indev 0.2"
 - name: SCLS Format "Mary"
   description: "The format of the code used in every Aster System project, made for simplicity."
   link: ../scls/format.html

@@ -9,7 +9,17 @@ main_title: SCLS Documentalist "Agatha"
         <h3>What is SCLS Documentalist "Agatha" ?</h3>
         <div>
             SCLS Documentalist "Agatha" is a special part of the SCLS library. Indeed, it is not made more as a software than a real library.
-            However, it is made to simplify the documentation, and it is Open Source. It has so its place here.
+            However, it is made to simplify the documentation, and it is Open Source. It has so its place here.<br>
+            The current version is the indev 0.2 version.
+            As the code source is not ready yet, only the description of what the library can do is provided.<br><br>
+            The word "documentation" should be seen more globally that just what developers are used to see it.
+            Indeed, even if its main goal is to simplify this vision of the documentation, SCLS Documentalist can also write any type of document.<br>
+            To be more precise, it does not write the document, but format an human made document.
+            It could be seen as a way to apply a format of writing to a text sample, without doing it manually.<br>
+            The big advantage of this feature is that the time passed to do the formatting is gained and can be reuse to do a better writing, to upgrade the code, or to play Minecraft.
+            It can also be automated to format a big number of document easily.<br>
+            Actually, it can be used as a software or as a C++ library.<br>
+            However, this version (indev 0.2) only works for simple C++ code and can't be used as a software.
         </div>
     </article>
     <article>
@@ -33,6 +43,15 @@ main_title: SCLS Documentalist "Agatha"
 </section>
 <section>
     <h2>Content</h2>
+    <article>
+        <h3>Documentation</h3>
+        The currently documented version is the indev 0.2. However, as SCLS Documentalis is not ready yet to document clearly a project, this documentation is still human-made.<br>
+        The project is cutted in different parts, with each part in separated file. Here the list of each parts :<br>
+        <ul>
+            <li><a href="scls_documentalist_documentation/scls_documentalist_core.html">The pattern system</a> : The core system of SCLS Documentalist "Agatha".</li>
+            <li><a href="scls_documentalist_documentation/scls_documentalist_project.html">scls_foundation_binary.h</a> : A simple built-in way to create a project with SCLS Documentalist "Agatha".</li>
+        </ul>
+    </article>
     <article>
         <h3>License</h3>
         SCLS Documentalist "Agatha" uses the GPL V3.0 licence, more informations in <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">this website</a>.<br>
