@@ -1,6 +1,12 @@
 - name: Home page
   link: /index.html
+  local: 1
 - name: SCLS
   link: /projects/scls.html
+  local: 1
 - name: PLEOS
   link: /projects/pleos.html
+  local: 1
+- name: Aster School
+  link: https://aster-system.github.io/aster-school/
+  local: 0

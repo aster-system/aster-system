@@ -1,7 +1,13 @@
 <nav id="global_nav">
     {% for item in site.data.project_navigation %}
-    <a href="{{ page.location }}{{ item.link }}">
-      {{ item.name }}
-    </a>
+      {% if item.local == 1 %}
+        <a href="{{ page.location }}{{ item.link }}">
+          {{ item.name }}
+        </a>
+      {% else %}
+        <a href="{{ item.link }}">
+          {{ item.name }}
+        </a>
+      {% endif %}
     {% endfor %}
 </nav>
