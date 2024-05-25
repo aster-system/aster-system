@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <meta charset="utf-8">
+    <title>Scls_documentalist_core</title>
+  </head>
+  <body>
+    <h1 id="main_title">SCLS Documentalist pattern</h1>
+    <nav id="global_nav">
+    
+    <a href="../../index.html">
+      Home page
+    </a>
+    
+    <a href="../../projects/scls.html">
+      SCLS
+    </a>
+    
+    <a href="../../projects/pleos.html">
+      PLEOS
+    </a>
+    
+</nav>
+    <section>
+    <h2>Pattern system</h2>
+    <article>
+        <h3>How works SCLS Documentalist "Agatha" ?</h3>
+        <div>
+            SCLS Documentalist "Agatha" uses a lot of features to perform each operation.<br /><br />
+            The more important one is <b>the pattern system</b>.<br />
+            As said in the description, SCLS Documentalist "Agatha" is made to format a text. To format a text, it need a methodology which follows a pattern.
+            You can tell to SCLS Documentalist "Agatha" which pattern should be use to format a text.
+            However, there are no built-in pattern in this part of the library. You have to define one pattern to use it.
+        </div>
+    </article>
+    <article>
+        <h3>Customize a pattern</h3>
+        <div>
+            Some globals parts of the pattern can be defined easily in the pattern.<br /><br />
+            As in the <a href="#tphs">hierarchy system</a>, you can define a starting value and an ending value in the pattern.
+            Its a simple string which is added at the start and at the end of the pattern.<br /><br />
+            Moreover, if the pattern is, for example, only comments, you can tell the user to fill the pattern only with comments, or define the default start of a line in the pattern.
+            It represents what should always be at the start of a line in the pattern, if the user enters a multi line text.
+            For example, if the pattern is only comments, you can se this value to "// ", so the user does not have to put it himself.
+        </div>
+    </article>
+    <article>
+        <h3>Customize a pattern with variables</h3>
+        <div>
+            If a pattern only have a fixed text immutable, it is literally useless.
+            To customize a pattern easily, SCLS Documentalist "Agatha" incorporates a system of <b>variables</b>.
+            Indeed, in the text, you can specify to the library that you want to use a user-defined value, a variable.
+            As the text is only a text, the variable type can only be a text ¯\_(ツ)_/¯.
+            However, the variable is quite independant of the pattern, and its only utilisation in a pattern its is definition.
+            It can be weird, but a variable should be extensible to be use in a fully user-defined text, and not be limitated to a pattern behavior.
+            The value of a variable is so putted in the text of a <a href="#piece_system">piece</a>, and not in the pattern.
+            The variables are defined between a start and an end part of text, defined by the macros SCLS_DOCUMENTALIST_VARIABLE_END and SCLS_DOCUMENTALIST_VARIABLE_START.
+            However, a badly defined variable may causes undefined behavior.<br />
+            If you want to force the user to define some variables, the pattern incorporates a system of forced variables.
+            If a forced variable is missing, the pattern and its children are fully ignored.<br /><br />
+            Some variables may be global for a pattern and its children.
+        </div>
+    </article>
+    <article>
+        <h3 id="tphs">The pattern hierarchy system</h3>
+        <div>
+            Each pattern have their text, corresponding to the skeleton of your pattern, and can also have a parent or children.
+            A parent pattern incorporates the text of its children in its text.
+            However, the children behavior is quite independant of the parent, making it interesting to use, excepting some setting.
+            Moreover, the parent text is independant of the children behavior.
+            You can chose where to place the parent text, before, between or after a child text.
+            You can also decide to use a defined text to separate each children more aesthetically.
+        </div>
+    </article>
+</section>
+<section>
+    <h2 id="piece_system">Piece system</h2>
+    <article>
+        <h3>How to handle a pattern ?</h3>
+        <div>
+            A lonely pattern is quite useless. However, it is absolutely no costumizable.
+            The simplest way to make a pattern fully costumizable is to use a <b>piece of text</b>.
+            It purpose is quite simple : it takes a pattern, the configuration wanted by the user, and assembles the all to make the wanted output.
+            Each pieces are independant between them, making them fully configurable how you want.
+            The content of each variable is incorporates in them, either thant the configuration of each pattern.
+        </div>
+    </article>
+    <article>
+        <h3>Easily configure a pattern</h3>
+        <div>
+            Moreover that configure the variables of a pattern, you can also configure the behavior of the entire pattern.<br /><br />
+            If you want to document two differents parts of code, with a part containing 3 functions and the other one 8 functions, you need to tell the first part of the piece to repeat 3 time the function pattern, and the second part of the piece to repeat 8 times the function pattern.<br />
+            This is possible, by defining the nombure of iteration of each pattern in a piece.
+            However, the children functions and variables may change according to the iteration.
+            If it happens, there is a way for each variables to know it. See <a href="#hekovahiap">this part</a> for more informations.<br /><br />
+            You can also disable or enable a group of pattern easily. If it is disabled, the pattern and its children are fully ignored.
+        </div>
+    </article>
+    <article>
+        <h3 id="hekovahiap">How each kind of variables are handle in a piece.</h3>
+        <div>
+            The variables are defined between a start and an end part of text, defined by the macros SCLS_DOCUMENTALIST_VARIABLE_END and SCLS_DOCUMENTALIST_VARIABLE_START.
+            Obviously, between this two string, there is the name of the variable.<br />
+            A variable can have a lot of behavior according to its name.<br /><br />
+            The simplest definition is only the name of the variable, which is very recommended to be alphabet character and some specials characters like '_'.
+            With this way, the variable as the same value wherever is the variable.<br /><br />
+            If you want that the variable as a different value according to its position, you have to add specials characters at the end of the name of the variable.
+            The "[]" string tells the piece that the variable name change according to the iterations of the parent pattern.
+            To be more precise, the "[]" string is replaced by "[number_of_iteration]". For example, the 5th iteration of the pattern of the variable "age[]" is "age[5]" in the piece.<br />
+            Moreover, by adding more "[]", you can have the iterations of the parent of the parent pattern.
+            For example, the 5th iteration of the 8th iteration of the patterns of the variable "location[][]" is "location[8][5]" in the piece.
+            By the way, in this case, the variable "age[]" stays "age[5]", because the "[]" the more at the left represents the pattern of the variable.<br />
+            If you don't want that the variable change according to a certain pattern, use "[.]".
+            For example, the 5th iteration of the 8th iteration of the patterns of the variable "location[.][]" is "location[.][5]" in the piece.
+            The fact that it is the 8th iteration of the parent of the pattern does not change the value of the variable.<br />
+            This modified part it's called <b>offset of the variable</b>.
+        </div>
+    </article>
+    <article>
+        <h3 id="hekopahiap">How each kind of patterns are handle in a piece.</h3>
+        <div>
+            The pattern can also be impacted by some configuration.<br /><br />
+            For the "[]" system, the using is exactly the same as in the variable.
+            For example, the 5th iteration of the 8th iteration of the parent pattern of the pattern "information[][]" is "information[8][5]" in the piece.
+        </div>
+    </article>
+</section>
+
+  </body>
+</html>
