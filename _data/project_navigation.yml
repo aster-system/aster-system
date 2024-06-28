@@ -7,6 +7,6 @@
 - name: PLEOS
   link: /projects/pleos.html
   local: 1
-- name: Aster School
-  link: https://aster-system.github.io/aster-school/
+- name: SAASF
+  link: https://aster-system.github.io/saasf/
   local: 0
