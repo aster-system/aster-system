@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <title>Pleos</title>
+
+    <style>
+        #clock {
+            font-size: 150px;
+        }
+        #clock_container {
+            font-size: 50px;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body onload="load_clock()">
+    <script type="text/javascript">
+        function load_clock() {
+            const second = 1000;
+            const minute = second * 60;
+            const hour = minute * 60;
+            const day = hour * 24;
+            const year = day * 365.25;
+
+            const birthday_time = 202 * day + hour * 7;
+            const d = new Date();
+            let time = d.getTime();
+
+            while(time > year) time -= year;
+            time = birthday_time - time;
+            let birthday_day = 0;
+            while(time > day) {time -= day;birthday_day++;}
+            let birthday_hour = 0;
+            while(time > hour) {time -= hour;birthday_hour++;}
+            let birthday_minute = 0;
+            while(time > minute) {time -= minute;birthday_minute++;}
+            let birthday_second = 0;
+            while(time > second) {time -= second;birthday_second++;}
+
+            var text = document.getElementById('clock');
+            text.textContent = "0" + birthday_day;
+            if(birthday_hour < 10) text.textContent += ":0" + birthday_hour;
+            else text.textContent += ":" + birthday_hour;
+            if(birthday_minute < 10) text.textContent += ":0" + birthday_minute;
+            else text.textContent += ":" + birthday_minute;
+            if(birthday_second < 10) text.textContent += ":0" + birthday_second;
+            else text.textContent += ":" + birthday_second;
+            
+            setTimeout(load_clock, 500);
+        };
+    </script>
+
+    <h1 id="main_title">Anniversaire de Beu</h1>
+    <nav id="global_nav">
+        <a href="../index.html">
+          Home page
+        </a>
+        <a href="../projects/scls.html">
+          SCLS
+        </a>
+        <a href="../projects/pleos.html">
+          PLEOS
+        </a>
+        <a href="https://aster-system.github.io/saasf/">
+          SAASF
+        </a>
+    </nav>
+    <section>
+        <div id="clock_container">
+            <h2>Temps restant avant le cadeau :</h2>
+            <p id="clock">
+
+            </p>
+        </div>
+    </section>
+  </body>
+</html>
