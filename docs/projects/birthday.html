@@ -14,6 +14,16 @@
             font-size: 50px;
             text-align: center;
         }
+        #tips_containers {
+          display: flex;
+          justify-content: space-evenly;
+        }
+        #tips_containers div {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+        }
     </style>
   </head>
   <body onload="load_clock()">
@@ -71,9 +81,13 @@
     <section>
         <div id="clock_container">
             <h2>Temps restant avant le cadeau :</h2>
-            <p id="clock">
-
-            </p>
+            <p id="clock"></p>
+        </div>
+        <div id="tips_containers">
+          <div>
+            <h2>Premier indice</h2>
+            <img alt="Premier indice" src="tip1.png">
+          </div>
         </div>
     </section>
   </body>
