@@ -1,298 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
-        <style>
-            /*Links in the page*/
-            a {
-                color: white;
-            }
-
-            /*Arrow in the page*/
-            .arrow {
-                transform: rotate(90deg);
-                height: 0.6em;
-            }
-
-            /*Body in the page*/
-            body {
-                background-color: rgb(0, 33, 91);
-                box-sizing: border-box;
-                color: white;
-                font-size: 18px;
-                margin: 0;
-                max-width: 100vw;
-            }
-
-            /*Sample of code in a page*/
-            .code_sample {
-                background-color: rgb(30, 30, 30);
-                border: black solid 3px;
-                color: white;
-                margin: 2px;
-                padding: 5px;
-            }
-
-            /*Footer of the page*/
-            footer {
-                background-color: white;
-                color: black;
-                padding: 4px;
-            }
-
-            /*Links in the footer of the page*/
-            footer a {
-                color: black;
-            }
-
-            /*Main title of the footer of the page*/
-            footer h1 {
-                font-size: 2em;
-                margin: 0;
-            }
-
-
-            /*The header is the same in each pages*/
-            header {
-                background-color: white;
-                color: black;
-                display: flex;
-                height: 150px;
-                width: 100%;
-            }
-
-            /*The navs in the header are the same in each pages*/
-            header nav {
-                /*Header position*/
-                height: 100%;
-                position: relative;
-                /*Children position*/
-                display: flex;
-                flex: 1;
-                justify-content: space-around;
-            }
-
-            /*The as in the navs in the header are the same in each pages*/
-            header nav div {
-                align-content: center;
-                font-size: 300%;
-                height: 100%;
-            }
-
-            /*Links in the header*/
-            header nav div a {
-                color: black;
-            }
-
-            /*An important thing in a lesson*/
-            .important {
-                color: red;
-            }
-
-            /*Div containing arrows at the left and text at the right*/
-            .left_arrow_right_text {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-            }
-
-            /*Div containing the part in a left_arrow_right_text containers*/
-            .left_arrow_right_text_child {
-                display: grid;
-                grid-auto-columns: max-content;
-            }
-
-            /*Arrow in a part in a left_arrow_right_text containers*/
-            .left_arrow_right_text_arrow {
-                grid-column: 1;
-                grid-row: 2;
-                height: 2em;
-                max-width: 15vw;
-            }
-
-            /*Text in a part in a left_arrow_right_text containers*/
-            .left_arrow_right_text_text {
-                grid-column: 2;
-                grid-row: 2;
-                max-width: 85vw;
-                width: 100%;
-            }
-
-            /*Title in a part in a left_arrow_right_text containers*/
-            .left_arrow_right_text_title {
-                grid-column: 2;
-                grid-row: 1;
-                max-width: 85vw;
-            }
-
-            /*Main part of the page*/
-            #main_div {
-                margin: 8px;
-            }
-
-            /*Main title of the main page*/
-            #main_div h1 {
-                font-size: 4em;
-            }
-
-            /*Important titles of the main page*/
-            #main_div h2 {
-                font-size: 2.5em;
-            }
-
-            .voc {
-                background-color: rgb(220, 220, 220);
-            }
-
-            /*Style to use the Hammershmit One font*/
-            .hammersmith-one-regular {
-                font-family: "Hammersmith One", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-            }
-
-            /*Style to use the OpenSans bold font*/
-            .open-sans-bold {
-                font-family: "Open Sans", sans-serif;
-                font-optical-sizing: auto;
-                font-weight: 700;
-                font-style: normal;
-                font-variation-settings: "wdth" 100;
-            }
-
-            /*Style to use the OpenSans regular font*/
-            .open-sans-regular {
-                font-family: "Open Sans", sans-serif;
-                font-optical-sizing: auto;
-                font-weight: 400;
-                font-style: normal;
-                font-variation-settings: "wdth" 100;
-            }
-        </style>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aster SystÃ¨me - MÃ©dia</title>
-
-        <!--Connect to google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!--Get the Hammersmith One font, see https://fonts.google.com/specimen/Hammersmith+One for more informations-->
-        <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
-        <!--Get the OpenSans font, see https://fonts.google.com/specimen/Open+Sans for more informations-->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..8y=swap" rel="stylesheet">
+        <link href=".//styles/style.css" rel="stylesheet">
+        
     </head>
+
     <body class="open-sans-bold">
-        <header class="hammersmith-one-regular">
-            <img alt="Logo de Aster SystÃ¨me" src="./images/aster_system_logo.png">
-        </header>
+        
         <div id="main_div">
-            <h1>
-                Les mÃ©dias Aster SystÃ¨me
-            </h1>
-            <div>
-                En tant que seul moyen d'expression pour Aster SystÃ¨me, notre compagnie est trÃ¨s prÃ©sente sur divers mÃ©dias, et rÃ©seaux de partage d'informations.
-                Si vous Ãªtes sur cette page, il y a deux possibilitÃ©s : vous venez d'un des mÃ©dias de l'organisation, et vous voulez en savoir plus sur celle ci.
-                Ou, vous avez entendu parler autre part de l'organisation, et voulez plus d'informations sur ses mÃ©dias.
-                Vous trouverez ici les ressources les plus susceptibles de vous intÃ©resser, selon qui vous Ãªtes.
-            </div>
-            <div class="left_arrow_right_text">
-                <div class="left_arrow_right_text_child">
-                    <img alt="Contenu" class="arrow left_arrow_right_text_arrow" src="./images/arrow.png">
-                    <h2 class="left_arrow_right_text_title">
-                        Vous venez d'un mÃ©dia Aster SystÃ¨me
-                    </h2>
-                    <div class="left_arrow_right_text_text">
-                        <h3>
-                            Les shorts / tiktoks / rÃ©els d'apprentissage sur Aster SystÃ¨me Learn
-                        </h3>
-                        <div>
-                            Si vous venez d'un mÃ©dia Aster SystÃ¨me Learn, il est fort probable que vous veniez d'un short / tiktok / rÃ©el d'apprentissage.
-                            Toutes les informations complÃ©mentaires se situent sur notre site web d'apprentissage : <a href="https://aster-system.github.io/saasf/">SAASF</a>.
-                            Voici la classification des sujets que vous pourriez avoir vu passer :
-                            <ul>
-                                <li>
-                                    <a href="https://aster-system.github.io/saasf/astersystemelearn/physic/matter.html">
-                                        La physique regroupant : les atomes...
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://aster-system.github.io/saasf/astersystemelearn/it/algorithms.html">
-                                        Les algorithmes regroupant : le pseudo-code, le tri, la complexitÃ©...
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://aster-system.github.io/saasf/astersystemelearn/it/hardware.html">
-                                        L'hardware regroupant : la carte mÃ¨re, le processeur, la mÃ©moire, le stockage...
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://aster-system.github.io/saasf/astersystemelearn/it/printing_3d.html">
-                                        L'impression 3D.
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://aster-system.github.io/saasf/astersystemelearn/it/os.html">
-                                        Le systÃ¨me d'exploitation : les OS, le Kernel, le stockage via le Kernel.
-                                    </a>
-                                </li>
-                            </ul>
+            <h1>Les médias Aster Système</h1>
+                En tant que seul moyen d'expression pour Aster Système, notre compagnie est très présente sur divers médias, et réseaux de partage d'informations.
+Si vous êtes sur cette page, il y a deux possibilités: vous venez d'un des médias de l'organisation, et vous voulez en savoir plus sur celle ci.
+Ou, vous avez entendu parler autre part de l'organisation, et voulez plus d'informations sur ses médias.
+Vous trouverez ici les ressources les plus susceptibles de vous intéresser, selon qui vous êtes.
+                <div class="left_arrow_right_text">
+                    
+                        <div class="left_arrow_right_text_child">
+                            <img alt="Contenu" class="arrow left_arrow_right_text_arrow" src=".//images/arrow.png">
+                            <h2 class="left_arrow_right_text_title">
+                                Vous venez d'un média Aster Système
+                            </h2>
+                            <div class="left_arrow_right_text_text">
+                                <h3>Les shorts / tiktoks / réels d'apprentissage sur Aster Système Learn</h3>
+<p>Si vous venez d'un média Aster Système Learn, il est fort probable que vous veniez d'un short / tiktok / réel d'apprentissage.
+Toutes les informations complémentaires se situent sur notre site web d'apprentissage :
+<a href="https://aster-system.github.io/saasf/">SAASF</a>.
+Voici la classification des sujets que vous pourriez avoir vu passer :
+<ul>
+   <li>
+        <a href="https://aster-system.github.io/saasf/astersystemelearn/physic/matter.html">La physique quantique</a> :
+        les atomes, le modèle standard, les particules élémentaires...
+    </li>
+    <li>
+         <a href="https://aster-system.github.io/saasf/astersystemelearn/it/algorithms.html">Les algorithmes</a> :
+        le pseudo-code, le tri, la complexité.
+    </li>
+    <li>
+        <a href="https://aster-system.github.io/saasf/astersystemelearn/it/hardware.html">L'hardware</a> :
+        la carte mère, le processeur, la moire, le stockage...
+    </li>
+    <li>
+        <a href="https://aster-system.github.io/saasf/astersystemelearn/it/printing_3d.html">L'impression 3D.</a>
+    </li>
+    <li>
+        <a href="https://aster-system.github.io/saasf/astersystemelearn/it/os.html">Le système d'exploitation</a> :
+        les OS, le Kernel, le stockage via le Kernel.
+    </a>
+    </li>
+</ul>
+</p>
+<h3>Les projets shorts / tiktoks / réels sur Aster Système</h3>
+<p>Si vous venez d'un média Aster Système, il y a de fortes chances que vous veniez pour en savoir plus sur un projet posté sous forme de short / tiktok / réel.
+Tous ces projets se situent sur notre site web d'apprentissage : SAASF.
+Voici la classification de toutes les pages des projets publié:
+<ul>
+    <li>
+        <a href="https://aster-system.github.io/saasf/astersystemecreations/snake.html">Le jeu "Snake"</a> :
+        présenté en détail sur SAASF.
+    </li>
+</ul>
+</p>
+
+                            </div>
                         </div>
-                        <h3>
-                            Les dÃ©monstrations shorts / tiktoks / rÃ©els sur Aster SystÃ¨me
-                        </h3>
-                        <div>
-                            Si vous venez d'un mÃ©dia Aster SystÃ¨me, il est possible que vous veniez d'une dÃ©monstration.
-                            Il s'agit d'une prÃ©sentation d'une fonctionnalitÃ© d'un produit Aster SystÃ¨me.
-                            Ces pages ne sont pour l'instant pas disponible.
+                    
+                        <div class="left_arrow_right_text_child">
+                            <img alt="Contenu" class="arrow left_arrow_right_text_arrow" src=".//images/arrow.png">
+                            <h2 class="left_arrow_right_text_title">
+                                Vous ne venez pas d'un média Aster Système
+                            </h2>
+                            <div class="left_arrow_right_text_text">
+                                <h3>Vous ne connaissez pas nos médias</h3>
+<p>Si vous ne venez pas d'un média Aster Système, et que vous tombez sur cette section du site web, sachez que nous publions sur les médias beaucoup de contenu.
+Nous sommes présents sur Youtube, Tiktok et Instagram surtout.
+Voici les liens de tous les réseaux principaux (sur Youtube) :
+<ul>
+    <li>
+        <a href="www.youtube.com/@astersysteme">Chaîne Youtube principale Aster Système</a>
+    </li>
+    <li>
+        <a href="https://www.youtube.com/@astersystemelearn">Chaîne Youtube apprentissage Aster Système Learn</a>
+    </li>
+</ul>
+</p>
+<h3>Vous êtes professeur / élève / étudiant</h3>
+<p>Nous proposons certains outils principalement destinés aux professeurs et élèves.
+Ces outils se réunissent sous le nom de PLEOS.
+La page expliquant PLEOS est disponible, <a href="./projects/pleos.html">juste ici</a>.
+</p>
+
+                            </div>
                         </div>
-                        <h3>
-                            Les projets shorts / tiktoks / rÃ©els sur Aster SystÃ¨me
-                        </h3>
-                        <div>
-                            Si vous venez d'un mÃ©dia Aster SystÃ¨me, il y a de fortes chances que vous veniez pour en savoir plus sur un projet postÃ© sous forme de short / tiktok / rÃ©el.
-                            Tous ces projets se situent sur notre site web d'apprentissage : <a href="https://aster-system.github.io/saasf/">SAASF</a>.
-                            Voici la classification de toutes les pages des projets publiÃ©s :
-                            <ul>
-                                <li>
-                                    <a href="https://aster-system.github.io/saasf/astersystemecreations/snake.html">
-                                        Le jeu "Snake", prÃ©sentÃ© en dÃ©tail sur SAASF.
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    
                 </div>
-                <div class="left_arrow_right_text_child">
-                    <img alt="Contenu" class="arrow left_arrow_right_text_arrow" src="./images/arrow.png">
-                    <h2 class="left_arrow_right_text_title">
-                        Vous ne venez pas d'un mÃ©dia Aster SystÃ¨me
-                    </h2>
-                    <div class="left_arrow_right_text_text">
-                        Si vous ne venez pas d'un mÃ©dia Aster SystÃ¨me, et que vous tombez sur cette section du site web, sachez que nous publions sur les mÃ©dias beaucoup de contenu.
-                        Nous sommes prÃ©sents sur Youtube, Tiktok et Instagram surtout.
-                        Voici les liens de tous les rÃ©seaux principaux (sur Youtube) :
-                        <ul>
-                            <li>
-                                <a href="https://www.youtube.com/channel/UCyWFKBFreuxgpqOcHBfza8A" target="_blank">
-                                    ChaÃ®ne Youtube principale Aster SystÃ¨me
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/channel/UC-dNqR_PqQw-Sn12LeU-92Q" target="_blank">
-                                    ChaÃ®ne Youtube apprentissage Aster SystÃ¨me Learn
-                                </a>
-                            </li>
-                        </ul>
-                        <h3>
-                            Vous Ãªtes professeur / Ã©lÃ¨ve / Ã©tudiant
-                        </h3>
-                        <p>
-                            Nous proposons certains outils principalement destinÃ©s aux professeurs ou Ã©lÃ¨ves.
-                            Ces outils se rÃ©unissent sous le nom de PLEOS.
-                            La page expliquant PLEOS est disponible, <a href="./projects/pleos.html">juste ici</a>.
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
+        <footer>
+    <h1>Plus d'informations</h1>
+    <div class="open-sans-regular">
+        Ce site web est proposé par l'organisation <a href=".//index.html">Aster Système</a>.<br>
+        Le code source du site web est disponible sur Github, <a href="https://github.com/aster-system/aster-system" target="_blank">dans ce repositorie</a>.</br>
+        Ce site web est réalisé avec SCLS Workspace "Agatha", logiciel réalisé par Aster Système avec SCLS.</br>
+        Ce site est proposé sous la license
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0
+        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a>
+    </div>
+</footer>
     </body>
 </html>
